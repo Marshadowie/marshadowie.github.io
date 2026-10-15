@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MARSHARPI — Home</title>
+  <meta name="description" content="MARSHARPI is a download site for free creator resources.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Josefin+Sans:wght@300;400&family=Rosario:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/nav.js" defer></script>
+  <script src="assets/js/router.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <!--<div class="lang">
+      <a href="ja/" lang="ja">JA</a>
+      <a href="./" aria-current="page">EN</a>
+    </div>-->
+
+    <!-- Original placeholder emblem. Replace with your own logo SVG/PNG. -->
+    <a class="emblem" href="#/home" aria-label="MARSHARPI home">
+      <!--<svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-linejoin="round" aria-hidden="true">
+        <path d="M100 8 L192 100 L100 192 L8 100 Z" stroke-width="5"/>
+        <path d="M100 40 L160 100 L100 160 L40 100 Z" stroke-width="2.5"/>
+        <path d="M100 72 L106 94 L128 100 L106 106 L100 128 L94 106 L72 100 L94 94 Z" fill="currentColor" stroke="none"/>
+        <g fill="currentColor" stroke="none">
+          <circle cx="100" cy="26" r="3.5"/>
+          <circle cx="174" cy="100" r="3.5"/>
+          <circle cx="100" cy="174" r="3.5"/>
+          <circle cx="26" cy="100" r="3.5"/>
+        </g>
+      </svg> -->
+      
+
+            
+      <svg xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 500 500"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="18"
+          stroke-linecap="round"
+          stroke-linejoin="round">
+
+        <!-- Diamond frame, intentionally interrupted -->
+        <path d="M160 115 L250 25"/>
+        <path d="M250 25 L475 250" />
+        
+        <path d="M475 250 L400 320" />  
+        <path d="M320 400 L250 475" />
+        
+        <path d="M250 475 L225 450"/>
+        <path d="M75 175 L115 140"/>
+        <path d="M25 250 L85 195"/>
+        <path d="M25 250 L85 305 L95 315"/>
+
+        <!-- 鳳: left character -->
+        <g>
+          <path d="M115 140 H235 V175 H165"/>
+          <path d="M165 175 H215 L195 198"/>
+          <path d="M130 185 V330"/>
+          <path d="M165 210 H215 V305 H165 Z"/>
+          <path d="M185 235 H195"/>
+          <path d="M185 258 H195"/>
+          <path d="M185 281 H195"/>
+          <path d="M165 305 H210"/>
+          <path d="M130 330 L105 355"/>
+          <path d="M150 345 V385 L125 405"/>
+          <path d="M150 375 L205 430 V355"/>
+          <path d="M235 140 V315 L260 340"/>
+          <path d="M235 315 V420"/>
+        </g>
+
+        <!-- 瑞: right character -->
+        <g>
+          <path d="M325 135 V220 H395"/>
+          <path d="M395 175 V220"/>
+          <path d="M315 245 H405"/>
+          <path d="M360 245 L335 275 H310"/>
+          <path d="M310 275 H405"/>
+          <path d="M320 305 V400"/>
+          <path d="M320 305 H400 V365"/>
+          <path d="M350 305 V350"/>
+          <path d="M380 305 V340"/>
+        </g>
+
+        <!-- Central interlocking strokes -->
+        <g>
+          <path d="M265 205 H300"/>
+          <path d="M265 245 H300"/>
+          <path d="M282 205 V300"/>
+          <path d="M282 300 L255 325"/>
+        </g>
+
+      </svg>
+
+
+    </a>
+
+    <p class="wordmark"><span>Marshadow</span></p>
+    <p class="notice">This site prohibits reproduction, including screenshots, except for personal use.</p>
+  </header>
+
+  <!-- Sticky nav. Each heading's options sit right after its button (keeps Tab order correct). -->
+  <nav class="site-nav" aria-label="Main">
+    <div class="nav-inner">
+      <ul class="nav-list">
+        <li><a class="nav-head" href="#/home">Home</a></li>
+
+        <li class="has-menu">
+          <button class="nav-head" type="button" aria-expanded="false" aria-controls="menu-works">Works</button>
+          <div class="menu-group" id="menu-works">
+            <ul class="menu-col">
+              <li><a href="#/terms">Terms of Use</a></li>
+              <li><a href="#/introduction">Introduction</a></li>
+            </ul>
+            <ul class="menu-col">
+              <li><a href="#/costume-reference">Costume Reference</a></li>
+            </ul>
+            <ul class="menu-col">
+              <li><a href="#/assets">Assets &amp; New Illustrations</a></li>
+              <li><a href="#/how-to-use">How to Use</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="has-menu">
+          <button class="nav-head" type="button" aria-expanded="false" aria-controls="menu-downloads">Downloads</button>
+          <div class="menu-group" id="menu-downloads">
+            <ul class="menu-col">
+              <li><a href="#/downloads">All Downloads</a></li>
+              <li><a href="#/older-versions">Older Versions</a></li>
+            </ul>
+            <ul class="menu-col">
+              <li><a href="#/art-assets">Art &amp; Assets</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="has-menu">
+          <button class="nav-head" type="button" aria-expanded="false" aria-controls="menu-goods">Goods</button>
+          <div class="menu-group" id="menu-goods">
+            <ul class="menu-col">
+              <li><a href="#/shop">Shop List</a></li>
+            </ul>
+            <ul class="menu-col">
+              <li><a href="#/events">Event Info</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="has-menu">
+          <button class="nav-head" type="button" aria-expanded="false" aria-controls="menu-link">Link</button>
+          <div class="menu-group" id="menu-link">
+            <ul class="menu-col">
+              <li><a href="#/links">Links</a></li>
+              <li><a href="#/support">Support</a></li>
+              <li><a href="#/contact">Contact</a></li>
+            </ul>
+            <ul class="menu-col">
+              <li><a href="#/related-sites">Related Sites</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+      <!-- The rounded rectangle. JS sizes it to the open heading's options. -->
+      <div class="menu-frame" aria-hidden="true"></div>
+    </div>
+  </nav>
+
+  <div class="header-tail" aria-hidden="true"></div>
+
+  <main id="main" tabindex="-1">
+    <noscript><p class="noscript">This site needs JavaScript to show its pages.</p></noscript>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>The use of art other than illustrations licensed for distribution is prohibited.</p>
+      <p>&copy; 2026 MARSHARPI</p>
+    </div>
+  </footer>
+
+  <!-- ===================== Page views =====================
+       Add a page: create <template id="view-SLUG"> and link to it with href="#/SLUG".
+       Menu links with no template show the "under construction" placeholder. -->
+
+  <template id="view-home">
+    <h1 class="sr-only" tabindex="-1">MARSHARPI home</h1>
+    <div class="home-grid">
+      <div class="col-left">
+        <section class="intro">
+          <p>MARSHARPI is a download site for the library<br>
+            [Item One], [Item Two], [Item Three],<br>
+            [Item Four], [Item Five].</p>
+        </section>
+
+        <div class="notes">
+          <p>*Some images may display without warning.<br>Please view at your own risk.</p>
+          <p class="dashes" aria-hidden="true">-------------------</p>
+          <p><a class="terms-link" href="#/terms">Please see the Terms of Use</a></p>
+          <p class="small">Placeholder note line one.<br>Placeholder note line two.</p>
+        </div>
+
+        <!-- Character strip: replace each span with <img src="assets/img/char-1.png" alt="Name"> -->
+        <div class="cast" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <section class="history" aria-labelledby="history-title">
+        <h2 id="history-title">Update history</h2>
+        <div class="history-box">
+          <ol class="log" id="log">
+            <li>2026/10/07: Item Five released.</li>
+            <li>2026/09/02: Item Four released.</li>
+            <li>2026/07/27: Terms of Use and Q&amp;A updated.</li>
+            <li>2026/07/15: Goods page updated.</li>
+            <li>2026/06/12: Goods page updated.</li>
+            <li>2026/02/25: Terms of Use updated. English site released.</li>
+            <li>2026/01/21: Updated Q&amp;A for Terms of Use.</li>
+            <li>2026/01/08: Added a goods tab and an art download page.</li>
+            <li>2025/12/24: Updated Terms of Use.</li>
+            <li>2025/12/22: New full body art for Item One and Item Two released.</li>
+            <li>2025/12/19: New full body art for Item Three released.</li>
+            <li>2025/08/05: Updated Terms of Use (commercial use).</li>
+            <li>2025/07/02: Item Two downloads resumed.</li>
+            <li>2024/11/30: Fixed a download link for Item Four.</li>
+            <li>2024/07/18: Item Five announced.</li>
+          </ol>
+          <button class="read-more" type="button" aria-expanded="false" aria-controls="log">Read more</button>
+        </div>
+      </section>
+    </div>
+  </template>
+
+  <template id="view-terms">
+    <article class="page">
+      <p class="crumb"></p>
+      <h1 class="page-title" tabindex="-1">Terms of Use</h1>
+      <p class="page-meta">Last updated 2026/10/14 · Mock text for layout testing</p>
+
+      <div class="page-body">
+        <p class="lead">These terms apply to every resource distributed on MARSHARPI. Downloading a resource means you agree to them.</p>
+
+        <h2>Quick reference</h2>
+        <div class="table-wrap">
+          <table class="perm">
+            <thead>
+              <tr><th scope="col">Use</th><th scope="col">Allowed</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Personal, non-commercial projects</td><td><span class="mark ok" aria-hidden="true">○</span>Yes</td></tr>
+              <tr><td>Posting finished works on video and social sites</td><td><span class="mark ok" aria-hidden="true">○</span>Yes, with credit</td></tr>
+              <tr><td>Editing the resource for your own projects</td><td><span class="mark ok" aria-hidden="true">○</span>Yes</td></tr>
+              <tr><td>Commercial projects</td><td><span class="mark ask" aria-hidden="true">△</span>Ask first</td></tr>
+              <tr><td>Redistributing the original or edited files</td><td><span class="mark no" aria-hidden="true">×</span>No</td></tr>
+              <tr><td>Political, religious, or hateful content</td><td><span class="mark no" aria-hidden="true">×</span>No</td></tr>
+              <tr><td>AI training datasets</td><td><span class="mark no" aria-hidden="true">×</span>No</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>1. Credit</h2>
+        <p>Credit the resource and MARSHARPI in the description of any published work. For example: <em>Resource: Item One (MARSHARPI)</em>.</p>
+
+        <h2>2. Commercial use</h2>
+        <p>Contact us on the Contact page before any commercial use, including paid downloads, goods, and monetized streams. Requests are approved case by case.</p>
+
+        <h2>3. Character art</h2>
+        <ul>
+          <li>Only illustrations marked for distribution may be used.</li>
+          <li>Do not trace or reproduce any other art from this site.</li>
+          <li>Fan art is welcome as long as it follows these terms.</li>
+        </ul>
+
+        <h2>4. Prohibited uses</h2>
+        <ul>
+          <li>Claiming a resource, or work made from it, as entirely your own.</li>
+          <li>Pretending to be MARSHARPI or its creator.</li>
+          <li>Any use that breaks the law or harms another person.</li>
+        </ul>
+
+        <h2>5. Disclaimer</h2>
+        <p>Resources are provided as is. MARSHARPI is not responsible for any damage or trouble caused by using them.</p>
+
+        <h2>6. Changes to these terms</h2>
+        <p>These terms may change without notice. The version on this page always applies, and changes are listed in the update history.</p>
+      </div>
+    </article>
+  </template>
+
+  <template id="view-placeholder">
+    <article class="page">
+      <p class="crumb"></p>
+      <h1 class="page-title" tabindex="-1"></h1>
+      <p class="page-meta">This page is under construction.</p>
+    </article>
+  </template>
+
+  <template id="view-not-found" data-title="Page not found">
+    <article class="page">
+      <h1 class="page-title" tabindex="-1">Page not found</h1>
+      <p class="page-meta"><a href="#/home">Back to Home</a></p>
+    </article>
+  </template>
+</body>
+</html>
