@@ -33,7 +33,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--tan); outline-o
 
 /* ---------- Header ---------- */
 .site-header {
-  background: var(--dark);
+  /*background: var(--dark);*/
+  background: linear-gradient(135deg, #196fdf, #bc3eee);
   color: var(--gray);
   text-align: center;
   padding: 2rem 1rem 1.75rem;
@@ -78,6 +79,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--tan); outline-o
   z-index: 20;
   padding: 0 1.25rem;
   background: var(--dark);
+  /*background: linear-gradient(135deg, #196fdf, #bc3eee);*/
   transition: box-shadow .2s ease;
 }
 .site-nav.is-stuck { box-shadow: 0 1px 0 #4a4a4a, 0 6px 14px rgba(0, 0, 0, .35); }
