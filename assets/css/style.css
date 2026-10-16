@@ -10,6 +10,8 @@
   --tan: #c9b48c;
   --red: #dc4a36;
   --rust: #d0603e;
+  --blue: #196fdf;
+  --pink: #bc3eee;
   --serif: "Cormorant Garamond", Georgia, serif;
   --thin: "Josefin Sans", "Helvetica Neue", Arial, sans-serif;
   --body: "Rosario", "Segoe UI", system-ui, sans-serif;
@@ -34,7 +36,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--tan); outline-o
 /* ---------- Header ---------- */
 .site-header {
   /*background: var(--dark);*/
-  background: linear-gradient(135deg, #196fdf, #bc3eee);
+  background: linear-gradient(90deg, var(--blue), var(--pink)),
+               linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15));
+   background-blend-mode: multiply;
   color: var(--gray);
   text-align: center;
   padding: 2rem 1rem 1.75rem;
@@ -78,8 +82,10 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--tan); outline-o
   top: 0;
   z-index: 20;
   padding: 0 1.25rem;
-  background: var(--dark);
-  /*background: linear-gradient(135deg, #196fdf, #bc3eee);*/
+  /*background: var(--dark);*/
+  background: linear-gradient(90deg, var(--blue), var(--pink)),
+               linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15));
+   background-blend-mode: multiply;
   transition: box-shadow .2s ease;
 }
 .site-nav.is-stuck { box-shadow: 0 1px 0 #4a4a4a, 0 6px 14px rgba(0, 0, 0, .35); }
@@ -128,7 +134,10 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--tan); outline-o
   right: 0;
   z-index: 1;
   height: 0;
-  background: var(--dark);
+  /*background: var(--dark);*/  
+  background: linear-gradient(90deg, var(--blue), var(--pink)),
+               linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15));
+   background-blend-mode: multiply;
   border: 1px solid var(--frame-line);
   border-radius: 8px;
   opacity: 0;
@@ -195,7 +204,13 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--tan); outline-o
 }
 
 /* Dark band between nav and body (menus overlay it) */
-.header-tail { height: 4.5rem; background: var(--dark); }
+.header-tail { 
+  height: 4.5rem; 
+  /*background: var(--dark); */  
+  background: linear-gradient(90deg, var(--blue), var(--pink)),
+               linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15));
+   background-blend-mode: multiply;
+}
 
 /* ---------- Main ---------- */
 main { max-width: 70rem; min-height: 60vh; margin: 0 auto; padding: 3.5rem 1.25rem 4.5rem; }
@@ -233,14 +248,22 @@ main { max-width: 70rem; min-height: 60vh; margin: 0 auto; padding: 3.5rem 1.25r
 .terms-link {
   display: inline-block;
   padding: 0 .8rem;
-  background: var(--dark);
+  /*background: var(--dark);*/  
+  background: linear-gradient(90deg, var(--blue), var(--pink)),
+               linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15));
+   background-blend-mode: multiply;
   color: #eee;
   font-family: var(--serif);
   font-size: 1rem;
   letter-spacing: .08em;
   text-decoration: none;
 }
-.terms-link:hover { background: #111; }
+.terms-link:hover { 
+  /*background: #111; */
+  background: linear-gradient(90deg, var(--blue), var(--pink)),
+               linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15));
+   background-blend-mode: multiply;
+}
 
 .cast { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; margin-top: 1.5rem; }
 .cast span { width: 44px; height: 76px; border-radius: 50% 50% 40% 40%; background: #cfcfcf; }
